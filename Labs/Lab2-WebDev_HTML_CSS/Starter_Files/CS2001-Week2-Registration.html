@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>
-            Fresh Food For All
+            Fresh Food For Al 
         </title>
         <link rel="stylesheet" href="CS2001-Week2-Registration.css">
     </head>
@@ -13,9 +13,13 @@
                        each list item should correspond to the menu items (Home, Register, Login, Help)
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
-            <ul class="navlist">
-            </ul>
-         </nav>
+                       <ul class="navlist">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
@@ -33,11 +37,24 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
-                    
-                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
+                    <form action="/action_page.php">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email"><br><br>
+                        <label for="password">Password</label>
+                        <input type="text" id="password" name="password"><br><br>
+                        <label for="re-typepassword">Re-Type Password</label>
+                        <input type="text" id="re-typepassword" name="re-typepassword"><br><br>
+                        <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
+                        <input type="submit" value="Register">
+                      
+                    </form>
+
+                    
 
                     <br><br>
                 </form>
